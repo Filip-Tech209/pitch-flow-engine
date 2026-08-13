@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Color Tokens */
+  --color-brand-navy: #0F2D5B;
+  --color-brand-blue: #2563EB;
+  --color-brand-green: #16A34A;
+  --color-brand-light-green: #22C55E;
+  --color-brand-cyan: #06B6D4;
+  --color-brand-gray: #334155;
+}
+
+/* Custom Base Engine Utility Styles */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 transition-colors duration-200;
+  }
+  
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+}
